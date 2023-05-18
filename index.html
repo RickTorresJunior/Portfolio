@@ -1,0 +1,1352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rick Torres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+  
+    <style>
+
+      @font-face {
+        font-family: 'Phosphate Solid';
+        src: url('fonts/phosphate-webfont.woff2') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Proxima Nova';
+      src: url('fonts/proximanova-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+
+      @font-face {
+      font-family: 'Proxima Nova Thin';
+      src: url('fonts/proximanova_thin-webfont.woff2') format('woff2'),
+         url('fonts/proximanova_thin-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Proxima Nova Extra Bold';
+        src: url('fonts/ProximaNova_Extrabold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      } 
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+      }
+
+      .br_double {
+        display: block;
+        content: ""; /* clears default height */
+        margin-top: 30px;
+      }
+  
+      h1 {
+        font-family: "GoBold";
+        font-size: 3rem;
+        color: #ffffff;
+        font-weight: 100;
+      }
+
+      h1::first-letter {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-family: "Proxima Nova Extra Bold";
+        font-size: 1.1rem;
+        color: #63988E;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 100;
+      }
+
+      h3 {
+        font-family: "Proxima Nova Extra Bold";
+        font-size: 2rem;
+        color: #ffffff;
+        letter-spacing: 1px;
+        font-weight: 100;
+      }
+
+      h4 {
+        font-family: "Phosphate Solid";
+        font-size: 1.75rem;
+        font-weight: 100;
+        color: #ffffff;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+
+      h5 {
+        color: #ffffff;
+        font-family: "Proxima Nova Thin";
+        font-size: 1.1rem;
+        font-weight: 100;
+        /* line-height: 1.5; */
+        /* padding: 0 0 20px 0; */
+      }
+
+      h6 {
+        color: #ffffff;
+        font-family: "Long Cang";
+        font-size: 1.5rem;
+        font-weight: 100;
+        letter-spacing: 1px;
+      }
+
+      .font_splash {
+        /* display: inline; */
+        position: absolute;
+        font-family: "GoBold";
+        font-size: 3rem;
+        color: #000000;
+        font-weight: 100;
+        padding: 150px 0 0 8.1vw;
+      }
+
+      .font_splash::first-letter {
+        font-size: 4rem;
+      }
+
+      .font_splash_subheader {
+        font-family: "Long Cang";
+        font-size: 2rem;
+        font-weight: 100;
+      }
+
+      .font_superscript {
+        font-size: 4rem;
+      }
+
+      .font_subscript {
+        font-size: 1.5rem;
+      }
+
+      .font_body {
+        color: #ffffff;
+        font-family: "Proxima Nova Thin";
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+
+      .font_body_project {
+        color: #ffffff;
+        font-family: "Proxima Nova Thin";
+        font-size: 1.3rem;
+        line-height: 1.5;
+        padding: 0 0 20px 0;
+      }
+
+      .font_link {
+        /* display: inline-block; */
+        font-family: "Proxima Nova Extra Bold";
+        color: #CFACC3;
+        letter-spacing: 0.5px;
+      }
+
+      .font_white {
+        color: #ffffff;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a:hover {
+        color: #CFACC3;
+      }
+
+      /* Remove default bullets */
+  
+      ul {
+        list-style: none;
+      }
+
+      li::before {
+        content: "•"; 
+        color: #ffffff;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1.2rem;
+      }
+
+      /* Set Scroll Vertical Offset */
+
+        #section_splash, #section_skills, #section_portfolio, #section_contact {
+        scroll-margin-block-start: 144px;
+      }
+
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /*grid-template-rows: 1fr 4fr 1fr 2fr repeat(16, 1fr);
+              /*grid-template-rows: 1fr repeat (32, 1fr);*/
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        scroll-behavior: smooth;
+      }
+
+      .nav_bar {
+        z-index:9999;
+        top: 0;
+        height: 114px;
+        display: grid;
+        grid-area: 1 / 1 / 2 / 13;
+        position: sticky;
+        padding: 30px 0 0 0;
+        background-color: #000000;
+        /* border: 2px solid pink; */
+      }
+  
+      /* Nav Bar */
+
+      .nav_link_splash {
+        grid-area: 1 / 2 / 2 / 4;
+        margin: 0.5rem auto 0 auto;
+        /* border: 1px solid red; */
+      }
+
+      .nav_logo {
+        /* display: block; */
+        width: 5.5rem;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      /* Nav Bar - Link - Skills */
+
+      .nav_link_skills {
+        background-color: #000000;
+        grid-area: 1 / 4 / 2 / 6;
+        /* border: 1px solid red; */
+      }
+  
+      /* Nav Bar - Link - Portfolio */
+
+      .nav_link_portfolio {
+        background-color: #000000;
+        grid-area: 1 / 6 / 2 / 8;
+        /* border: 1px solid red; */
+      }
+  
+      /* Nav Bar - Link - Contact */
+
+      .nav_link_contact {
+        background-color: #000000;
+        grid-area: 1 / 8 / 2 / 10;
+        /* border: 1px solid red; */
+      }
+
+      /* Section - Splash */
+      
+      .section_splash {
+        grid-area: 2 / 1 / 3 / 13;
+        margin: -50px 0 30px 0;
+        background: url("images/Splash.png") #000000;
+        background-size: cover;
+        height: 68vw;
+      }
+  
+      /* Logo - Rick Torres */
+
+      .splash_logo {
+        grid-area: 2 / 2 / 3 / 8;
+        margin: 4vw 0 0 0;
+        /* border: 1px solid red; */
+      }
+
+      .splash_logo h1 {
+        color: #000000;
+      }
+
+      .splash_logo h6 {
+        color: #000000;
+        font-size: 1.5rem;
+        margin: -20px 0 0 0;
+      }
+
+      /* Header - Skillset & Software */
+      
+      .skills_header {
+        grid-area: 3 / 2 / 4 / 8;
+        margin: 0 0 20px 0;
+        /* border: 1px solid green; */
+      }
+
+      /* Skills List */
+  
+      .skills_list {
+        grid-area: 4 / 2 / 5 / 7;
+        line-height: 2.5;
+        margin: 0 0 150px 0;
+      }
+  
+      /* Software Logos */
+
+      .skills_logos {
+        grid-area: 4 / 8 / 5 / 13;
+        align-self: center;
+        margin: 0 0 150px 0;
+      }
+
+      .skills_logos img {
+        padding: 0 3vw 0 0;
+        /* border: 1px solid pink; */
+      }
+  
+      /* Divider */
+
+      .divider {
+        grid-area: 5 / 1 / 6 / 13;
+        border-bottom: 2px solid #363636;
+      }
+  
+      /* Header - Portfolio */
+
+      .portfolio_header {
+        grid-area: 6 / 2 / 7 / 7;
+      }
+  
+      .portfolio_header_right {
+        grid-area: 6 / 7 / 7 / 12;
+      }
+  
+      /* Header - Big Cat Rescue */
+
+      .BCR_header {
+        grid-area: 7 / 2 / 8 / 7;
+      }
+
+      #font_BCR {
+        color: #E3B633;
+        font-family: "Rubik Mono One";
+        font-weight: 100;
+        font-size: 1.8rem;
+      }
+  
+      /* Project Description */
+
+      .BCR_description {
+        grid-area: 8 / 2 / 9 / 7;
+        /* border: 1px solid green; */
+      }
+
+      /* Project Logo & Role */
+
+      .image_project_logo {
+        padding: 0px 0 40px 0;
+        /* border: 1px solid pink; */
+      }
+
+      .BCR_description_right {
+        grid-area: 7 / 8 / 9 / 12;
+        padding: 34px 0 0 0;
+      }
+
+      /* Header - User Research */
+
+      .BCR_header_UserResearch {
+        grid-area: 9 / 2 / 10 / 12;
+        text-align: center;
+        padding: 4rem 0 2rem 0;
+        /* border: 1px solid pink; */
+      }
+  
+      /* Image - User Persona */
+
+      .BCR_image_UserPersona {
+        grid-area: 10 / 2 / 11 / 7;
+        /* border: 1px solid green; */
+      }
+
+      .BCR_image_UserPersona > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+  
+      /* Description */
+
+      .BCR_description_UserPersona {
+        grid-area: 10 / 7 / 11 / 12;
+        padding: 0 0 0 4rem;
+        /* border: 1px solid orange; */
+      }
+
+      .BCR_description_UserPersona p {
+        /* border: 2px solid green; */
+        margin: -0.5rem 0 0 0;
+      }
+
+      /* Image - Journey Map */
+  
+      .BCR_image_JourneyMap {
+        grid-area: 11 / 2 / 12 / 7;
+        padding: 4rem 0 0 0;
+        /* border: 1px solid red; */
+      }
+
+      .BCR_image_JourneyMap > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+
+      /* Image - Survey Pie Charts */
+
+      .BCR_image_PieCharts {
+        grid-area: 11 / 7 / 12 / 12;
+        padding: 4rem 0 0 4rem;
+        /* border: 1px solid red; */
+      }
+  
+      .BCR_image_PieCharts > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+
+      /* Header - Definition */
+
+      .BCR_header_Definition {
+        grid-area: 13 / 2 / 14 / 12;
+        text-align: center;
+        padding: 4rem 0 2rem 0;
+        /* border: 1px solid red; */
+      }
+  
+      /* List - User Goals */
+
+      .BCR_list_UserGoals {
+        grid-area: 14 / 2 / 15 / 7;
+        /* border: 1px solid red; */
+      }
+
+      .BCR_list_UserGoals, .BCR_list_Priorities li {
+        color: #ffffff;
+        font-family: "Proxima Nova Thin";
+        font-size: 1.1rem;
+        font-weight: 100;
+        line-height: 2;
+      }
+
+      /* List - Feature Priorities */
+  
+      .BCR_list_Priorities {
+        grid-area: 14 / 7 / 15 / 12;
+        padding: 0 0 0 4rem;
+        /* border: 1px solid red; */
+      }
+  
+      /* Header - User Flow */
+
+      .BCR_header_UserFlow {
+        grid-area: 15 / 2 / 16 / 12;
+        text-align: center;
+        padding: 4rem 0 2rem 0;
+        /* border: 1px solid pink; */
+      }
+  
+      /* Image - User Flow */
+
+      .BCR_image_UserFlow {
+        grid-area: 16 / 2 / 17 / 12;
+        /* border: 1px solid pink; */
+      }
+
+      .BCR_image_UserFlow > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+  
+      /* Header - Wireframes */
+
+      .BCR_header_Wireframes {
+        grid-area: 17 / 1 / 18 / 13;
+        text-align: center;
+        padding: 4rem 0 2rem 0;
+        /* border: 1px solid green; */
+      }
+  
+      .container_wireframes {
+        display: grid;
+        grid-area: 18 / 1 / 19 / 13;
+        text-align: center;
+        /* padding: 0 0 0 4rem; */
+    }
+
+      /* Image - Wireframe 1 */
+
+      .BCR_image_Wireframes_01 {
+        grid-area: 18 / 1 / 19 / 5;
+        /* width: 25vw; */
+        /* text-align: left; */
+        margin: 0 2vw 0 8vw;
+      }
+
+      .BCR_image_Wireframes_01 > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        /* border: 1px solid red; */
+      }
+  
+      /* Image - Wireframe 2 */
+
+      .BCR_image_Wireframes_02 {
+        grid-area: 18 / 5 / 19 / 9;
+        /* width: 25vw; */
+        text-align: center;
+        margin: 0 4vw 0 2vw;
+        /* border: 1px solid red; */
+      }
+
+      .BCR_image_Wireframes_02 > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+
+      /* Image - Wireframe 3 */
+
+      .BCR_image_Wireframes_03 {
+        grid-area: 18 / 9 / 19 / 13;
+        /* width: 25vw; */
+        /* text-align: left; */
+        margin: 0 8vw 0 0;
+        /* border: 1px solid red; */
+      }
+
+      .BCR_image_Wireframes_03 > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        /* max-width: 345px; */
+      }
+
+      /* Header - High-Fidelity Prototype */
+
+      .BCR_header_HiFiPrototypes {
+        grid-area: 19 / 2 / 20 / 12;
+        text-align: center;
+        padding: 4rem 0 2rem 0;
+        /* border: 1px solid red; */
+      }
+  
+      .container_prototypes {
+        display: grid;
+        grid-area: 20 / 1 / 21 / 13;
+        text-align: center;
+        /* padding: 0 0 0 4rem; */
+    }
+
+      /* Images - Column 1 */
+
+      .BCR_image_Prototypes_01 {
+        grid-area: 20 / 1 / 21 / 5;
+        width: 25vw;
+        margin: 0 2vw 0 8vw;
+        /* border: 1px solid red; */
+      }
+
+      .BCR_image_Prototypes_01 > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        margin: 0 0 4vw 0;
+      }
+  
+      /* Images - Column 2 */
+
+      .BCR_image_Prototypes_02 {
+        grid-area: 20 / 5 / 21 / 9;
+        width: 25vw;
+        text-align: center;
+        margin: 0 4vw 0 2vw;
+        /* border: 1px solid red; */
+      }
+
+      .BCR_image_Prototypes_02 > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        margin: 0 0 4vw 0;
+      }
+  
+      /* Images - Column 3 */
+
+      .BCR_image_Prototypes_03 {
+        grid-area: 20 / 9 / 21 / 13;
+        width: 25vw;
+        margin: 0 8vw 0 0;
+        /* border: 1px solid red; */
+      }
+
+      .BCR_image_Prototypes_03 > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        margin: 0 8vw 0 0;
+      }
+
+      /* Header - Design System */
+
+      .BCR_header_DesignSystem {
+        grid-area: 21 / 2 / 22 / 12;
+        text-align: center;
+        padding: 4rem 0 2rem 0;
+        /* border: 1px solid red; */
+      }
+  
+      /* Image - Design System - Cover */
+  
+      .BCR_image_DesignSystem_Cover {
+        grid-area: 22 / 2 / 23 / 7;
+        /* border: 1px solid red; */
+      }
+
+      .BCR_image_DesignSystem_Cover > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+
+      /* Image - Design System - Colors */
+
+      .BCR_image_DesignSystem_Colors {
+        grid-area: 22 / 7 / 23 / 12;
+        padding: 0 0 0 4rem;
+        /* border: 1px solid red; */
+      }
+  
+      .BCR_image_DesignSystem_Colors > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+
+      /* Image - Design System - Typography */
+
+      .BCR_image_DesignSystem_Typography {
+        grid-area: 23 / 2 / 24 / 12;
+        padding: 4rem 0 0 0;
+        /* border: 1px solid red; */
+      }
+  
+      .BCR_image_DesignSystem_Typography > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+
+      /* Header - Future Opportunities */
+
+      .BCR_header_FutureOpportunities {
+        grid-area: 24 / 3 / 25 / 11;
+        text-align: center;
+        padding: 4rem 0 6rem 0;
+        /* border: 1px solid green; */
+      }
+
+      .BCR_header_FutureOpportunities p {
+        text-align: left;
+        line-height: 2;
+      }
+
+      /* Header - Resume */
+
+      .resume_header {
+        grid-area: 25 / 2 / 26 / 10;
+        padding: 0 0 2rem 0;
+        /* border: 1px solid green; */
+      }
+
+      /* Button - Resume */
+
+      .button_resume {
+        grid-area: 26 / 2 / 27 / 3;
+        padding: 0 2rem 0 0;
+        /* border: 1px solid pink; */
+      }
+
+      /* Link - Resume */
+
+      .link_resume {
+        grid-area: 26 / 3 / 27 / 10;
+        align-self: center;
+        /* border: 1px solid red; */
+      }
+
+      /* Header - Contact */
+
+      .contact_header {
+        grid-area: 27 / 2 / 28 / 10;
+        padding: 4rem 0 2rem 0;
+        /* border: 1px solid red; */
+      }
+
+      .contact_header h6 {
+        margin: -10px 0 2rem 0;
+      }
+
+      /* Button - Email */
+
+      .button_email {
+        grid-area: 28 / 2 / 29 / 3;
+        padding: 0 2rem 0 0;
+        /* border: 1px solid red; */
+      }
+
+      /* Link - Email */
+
+      .link_email {
+        grid-area: 28 / 3 / 29 / 10;
+        align-self: center;
+        /* border: 1px solid red; */
+      }
+
+      /* Button - LinkedIn */
+
+      .button_linkedin {
+        grid-area: 29 / 2 / 30 / 3;
+        padding: 4rem 2rem 10rem 0;
+        /* border: 1px solid red; */
+      }
+
+      /* Link - LinkedIn */
+
+      .link_linkedin {
+        grid-area: 29 / 3 / 30 / 10;
+        padding: 4rem 0 10rem 0;
+        align-self: center;
+        /* border: 1px solid red; */
+      }
+
+      /* Footer */
+
+      .section_footer { 
+        grid-area: 31 / 1 / 32 / 13;
+        margin: 0 0 0 0;
+        background: url("images/Footer_Background.png") #000000;
+        background-size: cover;
+        height: 30rem;
+      }
+
+      /* Footer - Logo - Script */
+
+      .footer_logo {
+        grid-area: 31 / 2 / 32 / 12;
+        text-align: right;
+        margin: 4rem 0 0 0;
+      }
+
+      .font_footer_header {
+        font-family: "GoBold";
+        font-size: 3rem;
+        color: #ffffff;
+        font-weight: 100;
+      }
+
+      .font_footer_subheader {
+        font-family: "Long Cang";
+        font-size: 2rem;
+        font-weight: 100;
+      }
+
+      /* Tablet Breakpoint - 950px */
+
+      @media screen and (max-width: 950px) {
+
+        .splash_logo {
+          grid-area: 2 / 2 / 3 / 5;
+          /* margin: 2vw 0 0 0; */
+          /* border: 1px solid red; */
+        }
+
+        .splash_logo h6 {
+          color: #000000;
+          font-size: 1.5rem;
+          margin: -20px 0 0 0;
+          /* border: 1px solid red; */
+        }
+
+        .skills_header {
+          grid-area: 3 / 2 / 4 / 12;
+          margin: 0 0 20px 0;
+          /* border: 1px solid green; */
+        }
+
+        .skills_list {
+          grid-area: 4 / 2 / 5 / 8;
+          margin: 0 0 0 0;
+        }
+
+        .skills_logos {
+          grid-area: 4 / 9 / 5 / 13;
+          /* border: 1px solid red; */
+          align-self: center;
+          text-align: center;
+          margin: 30px 1rem 4rem 0;
+        }
+
+        .skills_logos img {
+          padding: 0 3vw 2rem 0;
+          /* margin: 0 0 6vw 0; */
+          /* border: 1px solid pink; */
+        }
+
+        .portfolio_header {
+          grid-area: 6 / 2 / 7 / 12;
+          /* border: 1px solid red; */
+        }
+  
+        .portfolio_header_right {
+          grid-area: 6 / 7 / 7 / 12;
+          /* border: 1px solid red; */
+        }
+
+        .image_project_logo {
+          width: 29vw;
+          padding: 0px 0 40px 0;
+          /* border: 1px solid pink; */
+        }
+
+        .BCR_description_right {
+          grid-area: 7 / 8 / 9 / 12;
+          padding: 34px 0 0 0;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_image_UserPersona {
+          grid-area: 10 / 2 / 11 / 12;
+          /* border: 1px solid green; */
+        }
+
+        .BCR_image_JourneyMap {
+          grid-area: 11 / 2 / 12 / 12;
+          padding: 4rem 0 0 0;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_image_PieCharts {
+          grid-area: 12 / 2 / 13 / 12;
+          padding: 8rem 0 6rem 0;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_description_UserPersona {
+          grid-area: 13 / 2 / 14 / 12;
+          margin: 0 0 0 0;
+          padding: 0 0 2rem 0;
+          /* border: 1px solid orange; */
+        }
+
+        .BCR_description_UserPersona p {
+          font-size: 1.3rem;
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+          /* border: 1px solid green; */
+        }
+
+        .BCR_description_UserPersona .br_double {
+          display: block;
+          content: "";
+          margin-top: 10px;
+        }
+
+        .BCR_header_Definition {
+          grid-area: 14 / 2 / 15 / 12;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_list_UserGoals {
+          grid-area: 15 / 2 / 16 / 6;
+          /* border: 1px solid red; */
+        }
+  
+        .BCR_list_Priorities {
+          grid-area: 15 / 7 / 16 / 12;
+          padding: 0 0 2rem 0;
+          /* border: 1px solid red; */
+        }
+  
+        .BCR_header_UserFlow {
+          grid-area: 16 / 2 / 17 / 12;
+          text-align: center;
+          padding: 4rem 0 2rem 0;
+        /* border: 1px solid pink; */
+        }
+
+        .BCR_image_UserFlow {
+          grid-area: 17 / 2 / 18 / 12;
+          padding: 0 0 2rem 0;
+          /* border: 1px solid pink; */
+        }
+
+        .BCR_header_Wireframes {
+          grid-area: 18 / 1 / 19 / 13;
+          text-align: center;
+          padding: 4rem 0 2rem 0;
+          /* border: 1px solid green; */
+        }
+  
+        .container_wireframes {
+          display: grid;
+          grid-area: 19 / 1 / 20 / 13;
+          text-align: center;
+          padding: 0 0 2rem 0;
+          /* padding: 0 0 0 4rem; */
+        }
+
+        .BCR_header_HiFiPrototypes {
+          grid-area: 20 / 2 / 21 / 12;
+          text-align: center;
+          padding: 4rem 0 2rem 0;
+        }
+  
+        .container_prototypes {
+          display: grid;
+          grid-area: 21 / 1 / 22 / 13;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_image_Prototypes_01 {
+          grid-area: 21 / 1 / 22 / 5;
+          width: 25vw;
+          margin: 0 2vw 0 8vw;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_image_Prototypes_02 {
+          grid-area: 21 / 5 / 22 / 9;
+          width: 25vw;
+          text-align: center;
+          margin: 0 4vw 0 2vw;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_image_Prototypes_03 {
+          grid-area: 21 / 9 / 22 / 13;
+          width: 25vw;
+          margin: 0 8vw 0 0;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_header_DesignSystem {
+          grid-area: 22 / 2 / 23 / 12;
+          text-align: center;
+          padding: 4rem 0 2rem 0;
+          /* border: 1px solid red; */
+        }
+  
+        .BCR_image_DesignSystem_Cover {
+          grid-area: 23 / 2 / 24 / 12;
+          padding: 0 0 2rem 0;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_image_DesignSystem_Colors {
+          grid-area: 24 / 2 / 25 / 12;
+          padding: 0 0 2rem 0;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_image_DesignSystem_Typography {
+          grid-area: 25 / 2 / 26 / 12;
+          padding: 0 0 0 0;
+          /* border: 1px solid red; */
+        }
+
+        .BCR_header_FutureOpportunities {
+          grid-area: 26 / 2 / 27 / 12;
+        /* border: 1px solid green; */
+        }
+
+        .BCR_header_FutureOpportunities p {
+          line-height: 1.5;
+        }
+
+        .resume_header {
+          grid-area: 27 / 2 / 28 / 12;
+          /* border: 1px solid green; */
+        }
+
+        .button_resume {
+          grid-area: 28 / 2 / 29 / 3;
+          /* border: 1px solid pink; */
+        }
+
+        .link_resume {
+          grid-area: 28 / 3 / 29 / 10;
+          /* border: 1px solid red; */
+        }
+
+        .contact_header {
+          grid-area: 29 / 2 / 30 / 12;
+          /* border: 1px solid red; */
+        }
+
+        .contact_header h6 {
+          margin: -10px 0 2rem 0;
+        }
+
+        .button_email {
+          grid-area: 30 / 2 / 31 / 3;
+          padding: 0 2rem 0 0;
+          /* border: 1px solid red; */
+        }
+
+        .link_email {
+          grid-area: 30 / 3 / 31 / 10;
+          align-self: center;
+          /* border: 1px solid red; */
+        }
+
+        .button_linkedin {
+          grid-area: 31 / 2 / 32 / 3;
+          padding: 4rem 2rem 10rem 0;
+          /* border: 1px solid red; */
+        }
+
+        .link_linkedin {
+          grid-area: 31 / 3 / 32 / 10;
+          padding: 4rem 0 10rem 0;
+          align-self: center;
+          /* border: 1px solid red; */
+        }
+
+        .section_footer { 
+          grid-area: 33 / 1 / 34 / 13;
+          margin: 0 0 0 0;
+          background: url("images/Footer_Background.png") #000000;
+          background-size: cover;
+          height: 30rem;
+        }
+
+        .footer_logo {
+          grid-area: 33 / 2 / 34 / 12;
+          text-align: right;
+          margin: 4rem 0 0 0;
+        }
+
+        .font_footer_header {
+          font-size: 3rem;
+        }
+
+        .font_footer_subheader {
+          font-size: 2rem;
+        }
+
+      } /* end of Tablet Breakpoint */
+
+    </style>
+  
+  </head>
+  
+  <body>
+
+    <div class="parent">
+
+      <!-- Section - Nav Bar -->
+
+      <div class="nav_bar">
+
+      <!-- Link - Home -->
+
+      <div class="nav_link_splash">
+        <a href="#section_splash">
+        <img class="nav_logo" src="images/Logo_Triangle.svg" onmouseover="this.src='images/Logo_Triangle_Green.svg'"
+        onmouseout="this.src='images/Logo_Triangle.svg'" alt=""></a>
+      </div>
+
+      <!-- Link - Skills -->
+
+      <div class="nav_link_skills"><h4><a href="#section_skills">Skills</a></h4></div>
+
+      <!-- Link - Portfolio -->
+
+      <div class="nav_link_portfolio"><h4><a href="#section_portfolio">Portfolio</a></h4></div>
+
+      <!-- Link - Contact -->
+
+      <div class="nav_link_contact"><h4><a href="#section_contact">Contact</a></h4></div>
+
+      </div> <!-- End of Nav Bar -->
+
+      <!-- Section - Splash -->
+
+      <!-- Splash BG -->
+
+      <div id="section_splash" class="section_splash"></div>
+
+      <!-- Logo - Script -->
+
+      <div id="splash_logo" class="splash_logo"><h1>Rick <span class="font_superscript">T</span>orres<br><h6>Graphic Designer & UX Researcher</h6></h1></div>
+
+      <!-- Section - Skills -->
+
+      <!-- Header -->
+
+      <div id="section_skills" class="skills_header"><h1>Skillset <span class="font_subscript">&</span> <span class="font_superscript">S</span>oftware</h1></div>
+
+      <!-- Skillset List -->
+
+      <div class="skills_list"><h2>Graphic Design <span class="font_white">HTML & CSS</span> Interaction Design <span class="font_white">Wireframing</span> Design Systems <span class="font_white">Video Editing</span> UX Copyrighting <span class="font_white">Product Life Cycle Management</span></h2></div>
+
+      <!-- Software Logos -->
+
+      <div class="skills_logos"><img src="images/Logo_Photoshop.svg" alt="Photoshop Logo"><img src="images/Logo_Illustrator.svg" alt="Illustrator Logo"><img src="images/Logo_Figma.svg" alt="Figma Logo"><img src="images/Logo_HTML5.svg" alt="Daz3D Logo"></div>
+
+      <!-- Horizontal Divider -->
+
+      <div class="divider"> </div>
+
+      <!-- Section - Portfolio -->
+
+      <!-- Header -->
+
+      <div id="section_portfolio" class="portfolio_header"><h1>Portfolio</h1></div>
+
+      <div class="portfolio_header_right"></div>
+
+      <!-- BCR Header -->
+
+      <div class="BCR_header"><p id="font_BCR">Big Cat Rescue</p></div>
+
+      <!-- Description -->
+
+      <div class="BCR_description">
+        <h2>Problem</h2>
+        <p class="font_body_project">How can we redesign Big Cat Rescue to help retain and expand their membership base?</p>
+        <h2>Objective</h2><p class="font_body_project">Big Cat Rescue should educate their users about their mission in a manner that would convince visitors to donate towards the cause.</p>
+        <h2>Solution</h2>
+        <p class="font_body_project">The site was redesigned to convey a vibrant and exotic style to all animal lovers.  With an attractive interface and fun new interactions, it’s a surefire way to increase site traffic and donations.</p>
+      </div>
+
+      <div class="BCR_description_right">
+        <img class="image_project_logo" src="images/BCR_Logo_CaringForCatsTiger.svg" alt="Image of Big Cat Rescue White Tiger Logo">
+        <h2>Role</h2>
+        <p class="font_body_project">UI/UX Designer, Graphic Designer, Design System Lead</p>
+        <h2>Tools</h2>
+        <p class="font_body_project">Figma, Photoshop</p>
+        <h2>Timeline</h2>
+        <p class="font_body_project">3 Weeks</p>
+      </div>
+
+      <!-- Section - User Research -->
+
+      <!-- Header -->
+
+      <div class="BCR_header_UserResearch">
+        <h3>User Research</h3>
+      </div>
+
+      <!-- Images -->
+
+      <div class="BCR_image_UserPersona">
+        <img src="images/BCR_UserPersona.png" alt="User Persona Image">
+      </div>
+
+      <div class="BCR_description_UserPersona">
+        <p class="font_body">We conducted surveys and user interviews and learned that our typical user was between 30-35 and a likely pet owner.<br class="br_double">They have donated in the past and prefer to be referred by a close friend or relative.<br class="br_double">They would only like an annual update after donating and organizational transparency is critical.</p>
+      </div>
+
+      <div class="BCR_image_JourneyMap">
+        <img src="images/BCR_JourneyMap.png" alt="User Journey Map">
+      </div>
+      
+      <div class="BCR_image_PieCharts">
+        <img src="images/BCR_PieCharts.png" alt="Search Result Pie Graphs">
+      </div>
+
+      <!-- Header -->
+
+      <div class="BCR_header_Definition">
+        <h3>Definition</h3>
+      </div>
+
+      <!-- List - User Goals -->
+
+      <div class="BCR_list_UserGoals">
+        <h2>User Goals</h2>
+        <ul>
+          <li>Feel they can trust the organization</li>
+          <li>Know how their donations will be used</li>
+          <li>Want more payment options to donate</li>
+          <li>Avoid information overload</li>
+        </ul>
+      </div>
+
+      <!-- List - Feature Priorities -->
+
+      <div class="BCR_list_Priorities">
+        <h2>Feature Priorities</h2>
+        <ul>
+          <li>Option to pay via Venmo, Zelle or Credit Card</li>
+          <li>Option to donate once or monthly</li>
+          <li>Offer newsletter subscription</li>
+          <li>Interactive way for users to learn about the type of cats in the sanctuary</li>
+        </ul>
+      </div>
+
+      <!-- Section - User Flow -->
+
+      <!-- Header -->
+
+      <div class="BCR_header_UserFlow">
+        <h3>User Flow</h3>
+      </div>
+
+      <!-- Image -->
+
+      <div class="BCR_image_UserFlow">
+        <img src="images/BCR_UserFlow.png" alt="User Flowchart">
+      </div>
+
+      <!-- Section - Wireframes -->
+
+      <div class="BCR_header_Wireframes">
+        <h3>Wireframes</h3>
+      </div>
+
+      <div class="container_wireframes">
+        <div class="BCR_image_Wireframes_01">
+        <img src="images/BCR_Wireframe_Home.svg" alt="Wireframe - Home Page">
+        </div>
+        <div class="BCR_image_Wireframes_02">
+        <img src="images/BCR_Wireframe_GetInvolved.svg" alt="Wireframe - Get Involved Page">
+        </div>
+        <div class="BCR_image_Wireframes_03">
+        <img src="images/BCR_Wireframe_Donate.svg" alt="Wireframe - Donate Page">
+        </div>
+      </div>
+      
+      <!-- Section - Hi-Fidelity Prototypes -->
+
+      <!-- Header -->
+
+      <div class="BCR_header_HiFiPrototypes">
+        <h3>High-Fidelity Prototype</h3>
+      </div>
+
+      <!-- Images -->
+
+      <div class="container_prototypes">
+        <div class="BCR_image_Prototypes_01">
+          <img src="images/BCR_HiFi_Home.png" alt="High-Fidelity Prototype - Home Page">
+          <img src="images/BCR_HiFi_DropdownMenu.png" alt="High-Fidelity Prototype - Dropdown Menu">
+        </div>
+        <div class="BCR_image_Prototypes_02">
+          <img src="images/BCR_HiFi_Donate.png" alt="High-Fidelity Prototype - Donate Page">
+        </div>
+        <div class="BCR_image_Prototypes_03">
+          <img src="images/BCR_HiFi_Donate_Confirmation.png" alt="High-Fidelity Prototype - Donation Confirmed Page">
+          <img src="images/BCR_HiFi_HamburgerMenu.png" alt="High-Fidelity Prototype - Mobile Hamburger Menu">
+          <img src="images/BCR_HiFi_CubFacts.png" alt="High-Fidelity Prototype - Cub Facts">
+        </div>
+      </div>
+
+      <!-- Section - Design System -->
+
+      <!-- Header -->
+
+      <div class="BCR_header_DesignSystem">
+        <h3>Design System</h3>
+      </div>
+
+      <div class="BCR_image_DesignSystem_Cover">
+        <img src="images/BCR_SystemDesign_Cover.png" alt="Design System - Cover Page"></div>
+      <div class="BCR_image_DesignSystem_Colors">
+        <img src="images/BCR_DesignSystem_Colors.png" alt="Design System - Color Guidelines">
+      </div>
+      <div class="BCR_image_DesignSystem_Typography">
+        <img src="images/BCR_SystemDesign_Typography.png" alt="Design System - Typography Guidelines">
+      </div>
+
+      <!-- Section - Future Opportunities-->
+
+      <div class="BCR_header_FutureOpportunities">
+        <h3>Future Opportunities</h3>
+        <p class="font_body_project">With more time for research and development, our team would like to provide various iterations to stakeholders. We would also like to conduct more user tests to find other ways to entice users to donate.</p>
+      </div>
+
+      <!-- Section - Resume & Contact -->
+
+      <!-- Header -->
+
+      <div id="section_contact" class="resume_header">
+        <h1>Resume</h1>
+      </div>
+
+      <!-- Button & Link -->
+
+      <div class="button_resume">
+        <a href="images/Resume_RickTorres.pdf" target="blank"><img src="images/Button_Resume.svg" onmouseover="this.src='images/Button_Resume_Hover.svg'"
+        onmouseout="this.src='images/Button_Resume.svg'" alt="Click here to download my resume in PDF format"></a>
+      </div>
+
+      <div class="link_resume">
+        <a href="images/Resume_RickTorres.pdf" target="blank"><p class="font_link">Click here to download PDF</p></a>
+      </div>
+
+      <!-- Header - Contact -->
+
+      <div class="contact_header">
+        <h1>Contact</h1>
+        <h6>Reach out and let's build something spectacular!</h6>
+      </div>
+
+      <!-- Buttons & Links -->
+
+      <div class="button_email">
+        <a href="mailto:rick.torres.junior@gmail.com"><img id="button_email" src="images/Button_Email.svg" onmouseover="this.src='images/Button_Email_Hover.svg'"
+        onmouseout="this.src='images/Button_Email.svg'" alt="You can reach me at rick.torres.junior@gmail.com"></a>
+      </div>
+
+      <div class="link_email">
+        <p class="font_link">rick.torres.junior@gmail.com</p>
+      </div>
+
+      <div class="button_linkedin">
+        <a href="https://www.linkedin.com/in/ricktorresjr" target="blank">
+        <img id="button_email" src="images/Button_LinkedIn.svg" onmouseover="this.src='images/Button_LinkedIn_Hover.svg'"
+        onmouseout="this.src='images/Button_LinkedIn.svg'" alt="You can reach me at rick.torres.junior@gmail.com"></a>
+      </div>
+
+      <div class="link_linkedin">
+        <p class="font_link">linkedin.com/in/ricktorresjr</p>
+      </div>
+
+      <!-- Section - Footer -->
+
+      <div class="section_footer"></div>
+
+      <div class="footer_logo">
+        <h1>Rick <span class="font_superscript">T</span>orres<br><span class="font_footer_subheader">Graphic Designer & UX Researcher</span>
+        </h1><a href="images/Resume_RickTorres.pdf" target="blank">
+        <p class="font_link">view my resume (PDF)</p></a><p class="font_link"><a href="mailto:rick.torres.junior@gmail.com">rick.torres.junior@gmail.com</a></p><p class="font_link"><a href="https://www.linkedin.com/in/ricktorresjr" target="blank">linkedin.com/in/ricktorresjr</a></p>
+      </div>
+
+    </div> <!-- End of Parent Container -->
+
+  </body>
+  </html>
