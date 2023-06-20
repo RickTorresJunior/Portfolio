@@ -1295,9 +1295,10 @@ li::before {
     width: 100vw;
     margin: 0 0 0 0;
     text-align: center;
+    /* border: 1px solid red; */
   }
   .skills_logos img {
-    padding: 1.25rem;
+    padding: 1rem;
   }
   .portfolio_header {
     grid-area: auto / 2 / auto / 12;
