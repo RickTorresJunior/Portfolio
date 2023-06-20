@@ -1269,14 +1269,20 @@ li::before {
     grid-area: auto / 1 / auto / -1;
     background: url("images/splash_bg.png") #000000 no-repeat;
     background-size: cover;
-    /* background-position: 4%; */
+    background-position: 10%;
     height: 30rem;
     margin: 0 0 1rem 0;
   }
   .splash_header {
-    width: 55vw;
+    width: 68vw;
     margin: 3rem 0 0 2rem;
     border: 1px solid red;
+  }
+  .splash_header h1 {
+    font-size: 3rem;
+  }
+  .splash_header h1::first-letter, .splash_header .font_superscript {
+    font-size: 4rem;
   }
   .skills_header {
     grid-area: auto / 2 / auto / 12;
