@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Rubik+Mono+One&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <script src="script.js"></script> 
+  </head>
+  
+  <body>
+
+    <div class="parent">
+
+      <!-- Nav Bar -->
+
+      <div class="nav_bar">
+        <div class="nav_link_splash">
+        <a href="index.html">
+        <img class="nav_logo" src="images/Logo_Triangle.svg" onmouseover="this.src='images/Logo_Triangle_Green.svg'"
+        onmouseout="this.src='images/Logo_Triangle.svg'" alt=""></a>
+        </div>
+        <div class="nav_link_skills"><h4><a href="index.html#section_skills">Skills</a></h4></div>
+        <div class="nav_link_portfolio"><h4><a href="#container_tabbed_nav" class="secondary">Portfolio</a></h4>
+        </div>
+        <div class="nav_link_contact"><h4><a href="index.html#section_contact">Contact</a></h4>
+        </div>
+      </div> <!-- End of Nav Bar -->
+
+      <div id="portfolio_page_header">
+        <h1>Portfolio</h1>
+      </div>
+
+      <!-- Tabbed Nav -->
+
+      <div id="container_tabbed_nav" class="col_10">
+        <button id="tabbed_nav_btn_bcr" class="tab_lg tab_lg_selected" onclick="openProject('bcr')">Big Cat Rescue</button>
+        <button id="tabbed_nav_btn_feastly" class="tab_lg" onclick="openProject('feastly')">Feastly</button>
+        <button id="tabbed_nav_btn_doe" class="tab_lg" onclick="openProject('doe')">U.S. Department of Education</button>
+      </div>
+
+      <div id="container_tabbed_nav_divider"></div>
+
+      <div id="container_tabbed_pages" class="col_10">
+
+      <!-- Project - Big Cat Rescue -->
+
+      <div id="bcr" class="project_title">
+      <!-- <div class="portfolio_header_right"></div> -->
+      <div class="bcr_description col_10">
+        <div class="image_project_logo_header">
+          <img src="images/portfolio/bcr/bcr_logo_caring_for_cats.svg" alt="Image of Big Cat Rescue White Tiger Logo"></div>
+        <p id="font_bcr">Big Cat Rescue</p>
+        <h2>Problem</h2>
+        <p class="font_body_project">How can we redesign Big Cat Rescue to help retain and expand their membership base?</p>
+        <h2>Objective</h2><p class="font_body_project">Big Cat Rescue should educate their users about their mission in a manner that would convince visitors to donate towards the cause.</p>
+        <h2>Solution</h2>
+        <p class="font_body_project">The site was redesigned to convey a vibrant and exotic style to all animal lovers.  With an attractive interface and fun new interactions, it’s a surefire way to increase site traffic and donations.</p>
+      </div>
+
+      <div class="bcr_description_right">
+        <img class="image_project_logo" src="images/portfolio/bcr/bcr_logo_caring_for_cats.svg" alt="Image of Big Cat Rescue White Tiger Logo">
+        <h2>Figma Mobile Prototype</h2>
+        <a href="https://www.figma.fun/nCp4LB" target="_new"><p class="font_body_project_link">figma.fun/nCp4LB</p></a>
+        <h2>Role</h2>
+        <p class="font_body_project">UX Researcher, Design System Lead, Graphic Designer, Figma Prototype Artist</p>
+        <h2>Tools</h2>
+        <p class="font_body_project">Figma, Photoshop</p>
+        <h2>Timeline</h2>
+        <p class="font_body_project">3 Weeks</p>
+      </div>
+
+      <div class="bcr_header_user_research">
+        <h3>User Research</h3>
+      </div>
+
+      <div class="bcr_image_user_persona">
+        <img src="images/portfolio/bcr/user_persona.svg" class="img_cover" alt="User Persona Image">
+      </div>
+
+      <div class="bcr_image_journey_map">
+        <img src="images/portfolio/bcr/journey_map.svg" class="img_cover" alt="User Journey Map">
+      </div>
+
+      <div class="bcr_description_user_persona">
+        <p class="font_body">We conducted surveys and user interviews and learned that our typical user was between 30-35 and a likely pet owner.<br class="br_double">They have donated in the past and prefer to be referred by a close friend or relative.<br class="br_double">They would only like an annual update after donating and organizational transparency is critical.</p>
+      </div>
+      
+      <div class="bcr_image_pie_charts">
+        <img src="images/portfolio/bcr/pie_charts.svg" class="img_cover" alt="Search Result Pie Graphs">
+      </div>
+
+      <div class="bcr_header_definition">
+        <h3>Definition</h3>
+      </div>
+
+      <div class="bcr_list_user_goals">
+        <h2>User Goals</h2>
+        <ul>
+          <li>Feel they can trust the organization</li>
+          <li>Know how their donations will be used</li>
+          <li>Want more payment options to donate</li>
+          <li>Avoid information overload</li>
+        </ul>
+      </div>
+
+      <div class="bcr_list_priorities">
+        <h2>Feature Priorities</h2>
+        <ul>
+          <li>Option to pay via Venmo, Zelle or Credit Card</li>
+          <li>Option to donate once or monthly</li>
+          <li>Offer newsletter subscription</li>
+          <li>Interactive way for users to learn about the type of cats in the sanctuary</li>
+        </ul>
+      </div>
+
+      <div class="bcr_header_user_flow">
+        <h3>User Flow</h3>
+      </div>
+
+      <div class="bcr_image_user_flow">
+        <img src="images/portfolio/bcr/user_flow.svg" class="img_cover" alt="User Flowchart">
+      </div>
+
+      <div class="bcr_header_wireframes">
+        <h3>Wireframes</h3>
+      </div>
+
+      <div class="container_bcr_wireframes">
+        <div class="bcr_image_wireframes_01">
+        <img src="images/portfolio/bcr/wireframes_home.svg" class="img_cover" alt="Wireframe - Home Page">
+        </div>
+        <div class="bcr_image_wireframes_02">
+        <img src="images/portfolio/bcr/wireframes_get_involved.svg" class="img_cover" alt="Wireframe - Get Involved Page">
+        </div>
+        <div class="bcr_image_wireframes_03">
+        <img src="images/portfolio/bcr/wireframes_donate.svg" class="img_cover" alt="Wireframe - Donate Page">
+        </div>
+      </div>
+
+      <div class="bcr_header_hifi_prototypes">
+        <h3>High-Fidelity Prototype</h3>
+      </div>
+
+      <div class="container_bcr_prototypes">
+        <div class="bcr_image_prototypes_01">
+          <img src="images/portfolio/bcr/hifi_home.svg" class="img_cover" alt="High-Fidelity Prototype - Home Page">
+          <img src="images/portfolio/bcr/hifi_dropdown.svg" class="img_cover" alt="High-Fidelity Prototype - Dropdown Menu">
+        </div>
+        <div class="bcr_image_prototypes_02">
+          <img src="images/portfolio/bcr/hifi_donate.svg" class="img_cover" alt="High-Fidelity Prototype - Donate Page">
+        </div>
+        <div class="bcr_image_prototypes_03">
+          <img src="images/portfolio/bcr/hifi_donation_confirmation.svg" class="img_cover" alt="High-Fidelity Prototype - Donation Confirmed Page">
+          <img src="images/portfolio/bcr/hifi_menu.svg" class="img_cover" alt="High-Fidelity Prototype - Mobile Hamburger Menu">
+          <img src="images/portfolio/bcr/hifi_cub_facts.svg" class="img_cover" alt="High-Fidelity Prototype - Cub Facts">
+        </div>
+      </div>
+
+      <div class="bcr_header_design_system">
+        <h3>Design System</h3>
+      </div>
+
+      <div class="bcr_image_design_system_cover">
+        <img src="images/portfolio/bcr/design_system_cover.svg" class="img_cover rounded_20" alt="Design System - Cover Page"></div>
+      <div class="bcr_image_design_system_colors">
+        <img src="images/portfolio/bcr/design_system_colors.svg" class="img_cover rounded_20" alt="Design System - Color Guidelines">
+      </div>
+      <div class="bcr_image_design_system_typography">
+        <img src="images/portfolio/bcr/design_system_typography.svg" class="img_cover rounded_20" alt="Design System - Typography Guidelines">
+      </div>
+      
+      <div class="bcr_header_future_opportunities">
+        <h3>Future Opportunities</h3>
+        <p class="font_body_project">With more time for research and development, our team would like to provide various iterations to stakeholders. We would also like to conduct more user tests to find other ways to entice users to donate.</p>
+      </div>
+
+      <div class="container_footer_links">
+        <div class="footer_link_prev hide" onclick="openProject('bcr');">
+          <a href="#container_tabbed_nav"><h5>Previous Project<br><span class="primary">Big Cat Rescue</span></h5></a>
+        </div>
+        <div class="footer_link_top">
+          <a href="#container_tabbed_nav"><h5>Scroll to Top</h5></a>
+        </div>
+        <div class="footer_link_next" onclick="openProject('feastly');">
+            <a href="#container_tabbed_nav" onclick="footer_link_feastly()">  
+            <h5>Next Project<br><span class="primary">Feastly</span></h5></a>
+        </div>
+      </div>
+
+    </div> <!-- End of Project - BCR -->
+
+    <!-- Project - Feastly-->
+
+    <div id="feastly" class="project_title" style="display:none;">
+      <div class="feastly_description col_10">
+        <div class="image_project_logo_header">
+          <img src="images/portfolio/feastly/logo_feastly_3d.svg" alt="Image of Feastly 3D logo">
+        </div>
+        <p id="font_feastly">Feastly</p>
+        <h2>Problem</h2>
+        <p class="font_body_project">Users need a quick, secure and hassle-free way to order and pay quickly at fast casual restaurants.</p>
+       <h2>Objective</h2><p class="font_body_project">Build a fully branded mobile prototype with CSS Grid.</p>
+        <h2>Solution</h2>
+        <p class="font_body_project">An app that features a simple and intuitive menu system that makes it easy for customers to place and customize food orders as soon as they are seated.</p>
+      </div>
+
+    <div class="feastly_description_right">
+      <img id="image_project_logo_feastly" class="image_project_logo" src="images/portfolio/feastly/logo_feastly_3d.svg" alt="Image of Feastly 3D Spaghetti & Meatballs Logo">
+      <h2>Mobile Prototype</h2>
+      <a href="https://ricktorresjunior.github.io/Feastly/" target="_new"><p class="font_body_project_link">ricktorresjunior.github.io/Feastly</p></a>
+      <h2>Role</h2>
+      <p class="font_body_project">Front-End Developer, UX Researcher, Graphic Designer</p>
+      <h2>Tools</h2>
+      <p class="font_body_project">HTML & CSS, Figma, Photoshop</p>
+      <h2>Timeline</h2>
+      <p class="font_body_project">3 Weeks</p>
+    </div>
+
+    <div class="feastly_header_user_research">
+      <h3>User Research</h3>
+    </div>
+
+    <div class="feastly_image_user_persona">
+      <img src="images/portfolio/feastly/proto_persona.svg" class="img_cover rounded_20" alt="Proto Persona Image">
+    </div>
+
+    <div class="feastly_image_empathy_map">
+      <img src="images/portfolio/feastly/empathy_map.svg" class="img_cover rounded_20" alt="Image - Empathy Map">
+    </div>
+
+    <div class="feastly_description_user_persona">
+      <p class="font_body">We conducted surveys and user interviews and learned that 80% of our users preferred QR menus to paper menus.<br class="br_double">60% enjoy interacting with servers or other restaurant staff.<br class="br_double">70% have altered or substituted an ingredient.<br class="br_double">90% are comfortable linking their credit cards to their phones via Apple Pay or other services.</p>
+    </div>
+    
+    <div class="feastly_image_pie_charts">
+      <img src="images/portfolio/feastly/pie_charts.svg" class="img_cover" alt="Image - Pie Charts">
+    </div>
+
+    <div class="feastly_header_definition">
+      <h3>Definition</h3>
+    </div>
+
+    <div class="feastly_list_user_goals">
+      <h2>User Goals</h2>
+      <ul>
+        <li>Want an easy way to order and pay at restaurants</li>
+        <li>Want the option to substitute ingredients on the app</li>
+        <li>Want multiple payment options</li>
+        <li>Avoid scrolling through long or complicated menus</li>
+      </ul>
+    </div>
+
+    <div class="feastly_list_priorities">
+      <h2>Feature Priorities</h2>
+      <ul>
+        <li>Option to add food allergies to user profile</li>
+        <li>Option to pay via Credit Card, Apple Pay or cash</li>
+        <li>Intuitive and easy to use menu with sections for food and drinks</li>
+        <li>Ability to add restaurant to Favorites</li>
+      </ul>
+    </div>
+
+    <div class="feastly_header_user_flow">
+      <h3>User Flow</h3>
+    </div>
+    <div class="feastly_image_user_flow">
+      <img src="images/portfolio/feastly/user_flow.svg" class="img_cover rounded_20" alt="User Flowchart">
+    </div>
+
+    <div class="feastly_header_sketches">
+      <h3>Sketches</h3>
+    </div>
+    <div class="feastly_image_sketches">
+      <img src="images/portfolio/feastly/sketches_01.svg" class="img_cover" alt="iPhone Prototype Sketches">
+      <br>
+      <img src="images/portfolio/feastly/sketches_02.svg" class="img_cover" alt="More iPhone Prototype Sketches">
+    </div>
+
+    <div class="feastly_header_wireframes">
+      <h3>Wireframes</h3>
+    </div>
+    <div class="container_feastly_wireframes">
+      <div class="feastly_image_wireframes_01">
+      <img src="images/portfolio/feastly/wireframes_home.svg" class="img_cover" alt="Wireframe - Home Page">
+      </div>
+      <div class="feastly_image_wireframes_02">
+      <img src="images/portfolio/feastly/wireframes_qrscan.svg" class="img_cover" alt="Wireframe - QR Scan">
+      </div>
+      <div class="feastly_image_wireframes_03">
+      <img src="images/portfolio/feastly/wireframes_menu.svg" class="img_cover" alt="Wireframe - Restaurant Menu">
+      </div>
+    </div>
+
+    <div class="feastly_header_hifi_prototypes">
+      <h3>High-Fidelity Prototype</h3>
+    </div>
+    <div class="container_feastly_prototypes">
+      <div class="feastly_image_prototypes_01">
+        <img src="images/portfolio/feastly/hifi_login.svg" class="img_cover" alt="High-Fidelity Prototype - Home Page">
+        <img src="images/portfolio/feastly/hifi_qrscan_modal.svg" class="img_cover" alt="High-Fidelity Prototype - Home Page">
+        <img src="images/portfolio/feastly/hifi_order_summary.svg" class="img_cover" alt="High-Fidelity Prototype - Home Page">
+      </div>
+      <div class="feastly_image_prototypes_02">
+        <img src="images/portfolio/feastly/hifi_home.svg" class="img_cover" alt="High-Fidelity Prototype - Dropdown Menu">
+        <img src="images/portfolio/feastly/hifi_menu.svg" class="img_cover" alt="High-Fidelity Prototype - Dropdown Menu">
+        <img src="images/portfolio/feastly/hifi_profile.svg" class="img_cover" alt="High-Fidelity Prototype - Home Page">
+      </div>
+      <div class="feastly_image_prototypes_03">
+        <img src="images/portfolio/feastly/hifi_qrscan.svg" class="img_cover" alt="High-Fidelity Prototype - Donation Confirmed Page">
+        <img src="images/portfolio/feastly/hifi_menu_item.svg" class="img_cover" alt="High-Fidelity Prototype - Donation Confirmed Page">
+        <img src="images/portfolio/feastly/hifi_no_orders.svg" class="img_cover" alt="High-Fidelity Prototype - Home Page">
+      </div>
+    </div>
+
+    <div class="feastly_header_design_system">
+      <h3>Design System</h3>
+    </div>
+    <div class="feastly_image_design_system">
+      <img src="images/portfolio/feastly/design_system.svg" class="img_cover rounded_20" alt="Design System - Cover Page">
+    </div>
+
+    <div class="feastly_header_web_architecture">
+      <h3>Web Architecture</h3>
+    </div>
+    <div class="feastly_image_web_architecture">
+      <img src="images/portfolio/feastly/web_architecture.svg" class="img_cover rounded_20" alt="Design System - Cover Page">
+    </div>
+
+    <div class="feastly_header_future_opportunities">
+      <h3>Future Opportunities</h3>
+      <p class="font_body_project">We plan to conduct in-depth research on the restaurant side, exploring server pain points and improving their efficiency. Additionally, we'll gather insights from management to enhance operations. By understanding these stakeholders’ needs, we can create a more valuable and effective app experience.</p>
+    </div>
+
+    <div class="container_footer_links">
+      <div class="footer_link_prev" onclick="openProject('bcr');">
+        <a href="#container_tabbed_nav" onclick="footer_link_bcr()"><h5>Previous Project<br><span class="primary">Big Cat Rescue</span></h5></a>
+      </div>
+      <div class="footer_link_top">
+        <a href="#container_tabbed_nav"><h5>Scroll to Top</h5></a>
+      </div>
+      <div class="footer_link_next" onclick="openProject('doe');">
+        <a href="#container_tabbed_nav" onclick="footer_link_doe()"><h5>Next Project<br><span class="primary">U.S. Department of Education</span></h5></a>
+      </div>
+    </div>
+
+    </div> <!-- End of Project - Feastly -->
+
+    <!-- Project - U.S. Department of Education-->
+
+    <div id="doe" class="project_title" style="display:none">
+      <div class="doe_description col_10">
+        <div class="image_project_logo_header">
+          <img src="images/portfolio/doe/logo_doe.svg" alt="Image of Feastly 3D logo">
+        </div>
+        <p id="font_doe">U.S. Department of Education</p>
+        <h2>Problem</h2>
+        <p class="font_body_project">The U.S. Department of Education’s home page is outdated and difficult to navigate.</p>
+       <h2>Objective</h2><p class="font_body_project">Study and annotate the existing design to find ways to improve the user experience.</p>
+        <h2>Solution</h2>
+        <p class="font_body_project">Build a desktop and mobile Figma prototype of a completely redesigned home page that caters to students, educators and researchers.</p>
+      </div>
+
+    <div class="doe_description_right">
+      <img id="image_project_logo_doe" class="image_project_logo" src="images/portfolio/doe/logo_doe.svg" alt="Image of the U.S. Department of Education's Seal">
+      <h2>Figma Desktop Prototype</h2>
+      <a href="https://www.figma.fun/aDxJb2" target="_new"><p class="font_body_project_link">figma.fun/aDxJb2</p></a>
+      <h2>Figma Mobile Prototype</h2>
+      <a href="https://www.figma.fun/FiMKnb" target="_new"><p class="font_body_project_link">figma.fun/FiMKnb</p></a>
+      <h2>Role</h2>
+      <p class="font_body_project">UX Researcher, Figma Prototype Artist, Graphic Designer</p>
+      <h2>Tools</h2>
+      <p class="font_body_project">Figma, Photoshop, Illustrator, Miro</p>
+      <h2>Timeline</h2>
+      <p class="font_body_project">6 Weeks</p>
+    </div>
+
+    <div class="doe_header_heuristic_evaluation">
+      <h3>Heuristic Evaluation</h3>
+    </div>
+
+    <div class="doe_image_heuristic_evaluation">
+      <img src="images/portfolio/doe/heuristic_evaluation.svg" class="img_cover rounded_20" alt="Heuristic Evaluation of current Home Page">
+      <img src="images/portfolio/doe/color_contrast.svg" class="img_cover rounded_20" alt="Color & Contrast Check">
+    </div>
+
+    <div class="doe_header_user_research">
+      <h3>User Research</h3>
+    </div>
+
+    <div class="doe_image_proto_persona">
+      <img src="images/portfolio/doe/proto_persona.svg" class="img_cover rounded_20" alt="Proto Persona Image">
+      <img src="images/portfolio/doe/testing_plan.svg" class="img_cover rounded_20" alt="Testing Plan Image">
+      <img src="images/portfolio/doe/wireflow.png" class="img_cover" alt="User Wireflow">
+    </div>
+
+    <div class="doe_header_definition">
+      <h3>Definition</h3>
+    </div>
+
+    <div class="doe_list_user_goals">
+      <h2>User Goals</h2>
+      <ul>
+        <li>Needs to increase funding for her Special Education class</li>
+        <li>Wants to find information regarding government funding</li>
+        <li>Wants resources and equipment to help her students reach their potential</li>
+        <li>Avoid scrolling through walls of text</li>
+      </ul>
+    </div>
+
+    <div class="doe_list_priorities">
+      <h2>Feature Priorities</h2>
+      <ul>
+        <li>Easy to find sections for Students, Educators and Researchers</li>
+        <li>Improved hierarchy and typography to easily find relevant information</li>
+        <li>Consistent and high-contrast design to improve accessibility for al users</li>
+        <li>Trivia Game to increase user engagement</li>
+      </ul>
+    </div>
+
+    <div class="doe_header_wireframes">
+      <h3>Wireframes</h3>
+    </div>
+    <div class="container_doe_wireframes">
+      <div class="doe_image_wireframes_01">
+      <img src="images/portfolio/doe/wireframe_desktop.svg" class="img_cover rounded_20" alt="Wireframe - Home Page">
+      <img src="images/portfolio/doe/wireframes_menus.svg" class="img_cover" alt="Wireframe - Home Page">
+      </div>
+    </div>
+
+    <div class="doe_header_hifi_prototypes">
+      <h3>High-Fidelity Prototype</h3>
+    </div>
+    <div class="container_doe_hifi_prototypes">
+      <div class="doe_image_hifi_prototypes_01">
+        <img src="images/portfolio/doe/hifi_desktop_home.png" class="img_cover rounded_20" alt="High-Fidelity Prototype - Home Page">
+      </div>
+    </div>
+
+    <div class="doe_header_design_system">
+      <h3>Design System</h3>
+    </div>
+    <div class="doe_image_design_system">
+      <img src="images/portfolio/doe/design_system.png" class="img_cover rounded_20" alt="Design System">
+    </div>
+
+    <div class="doe_header_future_opportunities">
+      <h3>Future Opportunities</h3>
+      <p class="font_body_project">For future iterations, I would like to redesign the remaining pages using the updated branding and design guidelines. I would also like to interview more students and researchers to understand their needs.</p>
+    </div>
+
+    <div class="container_footer_links">
+      <div class="footer_link_prev" onclick="openProject('feastly');">
+        <a href="#container_tabbed_nav" onclick="footer_link_feastly()"><h5>Previous Project<br><span class="primary">Feastly</span></h5></a>
+      </div>
+      <div class="footer_link_top">
+        <a href="#container_tabbed_nav"><h5>Scroll to Top</h5></a>
+      </div>
+      <div class="footer_link_next">
+        <a href="index.html#section_resume"><h5>Contact Me<br><span class="primary">Let's talk!</span></h5></a>
+      </div>
+    </div>
+
+    </div> <!-- End of Project - U.S. Department of Education -->
+
+    </div> <!-- End of Tabbed Pages -->
+
+    <!-- Footer Nav -->
+
+      <!-- Footer Nav -->
+
+      <div class="container_footer_nav">
+
+        <div id="btn_footer_home">
+          <button class="btn_footer_nav" id="btn_home" onclick="location.href='index.html#section_splash';">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36" height="30" viewBox="0 0 36 30" fill="none">
+          <path id="path1" d="M18 0L0.5 30H35.5L18 0ZM18 12.1875L25.1094 24.375H10.959L18 12.1875Z" fill="#ffffff"/></svg>
+          <p>Home</p>
+          </button>
+        </div>
+
+        <div id="btn_footer_skills">
+          <button class="btn_footer_nav" id="btn_skills" onclick="location.href='index.html#section_skills';">
+          <svg svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="30" viewBox="0 0 32 30" fill="none">
+          <path id="path2" d="M8.91648 8.34553e-05C1.38452 -0.0359585 -0.292677 11.6133 10.2694 13.3195C8.32849 13.3531 6.62564 13.8288 4.23289 14.9502C-2.23212 17.9798 -0.925143 27.8162 5.66789 26.7509C7.93643 26.3843 9.03715 23.5909 5.72546 22.6459C6.81203 24.5052 3.88537 25.6034 2.96835 22.7676C2.22739 20.4764 4.35954 18.0637 6.42037 17.4304C8.42705 16.8138 10.055 16.7485 11.8463 17.0634C9.43927 19.2138 8.12592 22.1159 9.05827 24.8259C11.9875 33.34 21.7001 30.0074 19.7722 24.404C19.0915 22.4257 17.0479 21.4839 15.2983 23.7663C17.6119 23.2104 18.6176 26.1995 16.495 26.8645C14.761 27.408 12.5334 26.0152 12.1505 24.2686C11.636 21.9208 13.4513 19.4214 15.7547 18.2877C17.2137 20.5087 18.3082 21.3444 21.2299 22.8204C26.8778 25.6733 35.241 20.526 30.6979 15.8801C29.2093 14.3578 27.1074 13.9951 26.2569 16.7042C28.2431 15.4427 30.2537 18.387 28.4857 19.6907C27.0415 20.7556 24.4392 20.8922 22.7987 20.036C20.7725 18.9785 19.2597 17.6627 18.1808 15.8584C21.9356 16.718 26.0486 15.7916 27.5892 13.0114C30.5973 7.58309 27.1256 3.43782 23.6992 3.38081C22.3585 3.35845 21.0245 3.96081 20.0888 5.35872C18.9144 7.11348 19.4431 9.22243 22.4019 9.07117C20.4867 7.71313 22.2769 5.07623 24.1597 6.22404C25.6978 7.16164 25.6397 9.48163 24.8012 11.0765C23.8034 12.9747 20.8159 14.2624 18.5468 12.6248C18.3489 12.2662 18.1808 11.8912 18.0349 11.5044C18.6264 11.0969 19.0135 10.4352 19.0135 9.69129C19.0135 8.57537 18.1416 7.6418 17.017 7.47992C16.3747 4.52034 15.4814 1.66247 11.4349 0.410045C10.5375 0.132258 9.69554 0.00366257 8.91635 2.06989e-05L8.91648 8.34553e-05ZM16.6698 8.62787C17.2924 8.62787 17.7841 9.09717 17.7841 9.69142C17.7841 10.2856 17.2924 10.7549 16.6698 10.7549C16.0472 10.7549 15.5576 10.2856 15.5576 9.69136C15.5576 9.09717 16.0472 8.62787 16.6698 8.62787H16.6698ZM12.3665 9.28717C12.9891 9.28717 13.4809 9.75647 13.4809 10.3507C13.4809 10.9449 12.9891 11.4142 12.3665 11.4142C11.7439 11.4142 11.2521 10.9449 11.2521 10.3507C11.2521 9.75647 11.7439 9.28717 12.3665 9.28717Z" fill="#ffffff"/></svg>
+          <p>Skills</p></button>
+          </div>
+
+        <div id="btn_footer_portfolio">
+          <button class="btn_footer_nav" id="btn_portfolio" onclick="location.href='portfolio.html#portfolio_page_header';">
+          <svg svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="30" viewBox="0 0 34 30" fill="none">
+          <path id="path3" d="M33.9463 5.99974C34.6105 3.78492 28.9899 0.242344 23.9005 0.021287C14.0316 -0.376899 1.10969 4.80377 0.0476172 16.1839C-0.749649 25.3068 8.63345 30 15.537 30C22.4844 30 29.0792 24.6422 29.7872 21.7189C30.4953 18.7077 23.4586 19.5494 23.9458 14.7669C24.6538 7.99209 32.9734 9.23199 33.9477 5.99832L33.9463 5.99974ZM23.5025 4.45093C23.5025 5.60297 22.6175 6.48862 21.5115 6.48862C20.3602 6.48862 19.4751 5.60297 19.4751 4.45093C19.4751 3.34423 20.3602 2.45858 21.5115 2.45858C22.6175 2.45858 23.5025 3.34423 23.5025 4.45093ZM18.0151 5.5137C18.0151 6.7536 17.0409 7.72852 15.8471 7.72852C14.6533 7.72852 13.679 6.7536 13.679 5.5137C13.679 4.36165 14.6533 3.38815 15.8471 3.38815C17.0409 3.38815 18.0151 4.36307 18.0151 5.5137ZM12.7487 8.39169C12.7487 9.67552 11.7744 10.6944 10.4914 10.6944C9.25229 10.6944 8.23411 9.67552 8.23411 8.39169C8.23411 7.19572 9.25229 6.22222 10.4914 6.22222C11.7744 6.22222 12.7487 7.19713 12.7487 8.39169ZM8.32333 13.4392C8.32333 14.723 7.26125 15.7858 5.97826 15.7858C4.60605 15.7858 3.54398 14.723 3.54398 13.4392C3.54398 12.0661 4.60605 11.0033 5.97826 11.0033C7.26125 11.0033 8.32333 12.0661 8.32333 13.4392ZM20.4933 21.9413C20.4933 23.6248 19.0772 24.9965 17.351 24.9965C15.6687 24.9965 14.2979 23.6234 14.2979 21.9413C14.2979 20.214 15.6701 18.753 17.351 18.753C19.0772 18.753 20.4933 20.214 20.4933 21.9413Z" fill="#CFACC3"/></svg>
+          <p>Portoflio</p></button>
+        </div>
+
+        <div id="btn_footer_contact">
+          <button class="btn_footer_nav" id="btn_contact" onclick="location.href='index.html#section_resume';">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="path4" d="M0 0V24.2857H5.71429V30L17.8571 24.2857H30V0H0ZM10 14.2857H5.71429V10H10V14.2857ZM17.1429 14.2857H12.8571V10H17.1429V14.2857ZM24.2857 14.2857H20V10H24.2857V14.2857Z" fill="#ffffff"/></svg>
+          <p>Contact</p></button>
+        </div>
+
+      </div> <!-- End of Footer Nav -->
+
+      <!-- Footer -->
+
+      <div class="section_footer">
+        <div class="footer_logo">
+          <h1>Rick <span class="font_superscript">T</span>orres<br><span class="font_footer_subheader">UX Researcher & Front-End Developer</span>
+          </h1><a href="images/Resume_RickTorres.pdf" target="blank">
+          <p class="font_link">view my resume (PDF)</p></a><p class="font_link"><a href="mailto:rick.torres.junior@gmail.com">rick.torres.junior@gmail.com</a></p><p class="font_link"><a href="https://www.linkedin.com/in/ricktorresjr" target="blank">linkedin.com/in/ricktorresjr</a></p>
+        </div>
+      </div> <!-- End of Footer -->
+    
+    </div> <!-- End of Parent Container -->
+
+  <script>
+
+    // Add active class to the current tab
+    var header = document.getElementById("container_tabbed_nav");
+    var btns = header.getElementsByClassName("tab_lg");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("tab_lg_selected");
+      current[0].className = current[0].className.replace("tab_lg_selected", "");
+      this.className += " tab_lg_selected";
+      });
+    }
+
+    // Link to Feastly 
+    function footer_link_feastly() {
+      var current = document.getElementsByClassName("tab_lg_selected");
+      current[0].className = current[0].className.replace("tab_lg_selected", "");
+      document.getElementById('tabbed_nav_btn_feastly').className += " tab_lg_selected";
+    };
+
+    // Link to Big Cat Rescue
+    function footer_link_bcr() {
+      var current = document.getElementsByClassName("tab_lg_selected");
+      current[0].className = current[0].className.replace("tab_lg_selected", "");
+      document.getElementById('tabbed_nav_btn_bcr').className += " tab_lg_selected";
+    };
+
+    // Link to U.S. Dept of Education
+    function footer_link_doe() {
+      var current = document.getElementsByClassName("tab_lg_selected");
+      current[0].className = current[0].className.replace("tab_lg_selected", "");
+      document.getElementById('tabbed_nav_btn_doe').className += " tab_lg_selected";
+    };
+
+    // Change Selected Icon Color
+
+    $('#btn_home').on("click", function() {
+          $('#path2, #path3, #path4').css({ fill: "#ffffff" });
+          $('#path1').css({ fill: "#CFACC3" });
+      });
+      $('#btn_skills').on("click", function() {
+          $('#path1, #path3, #path4').css({ fill: "#ffffff" });
+          $('#path2').css({ fill: "#CFACC3" });
+      });
+      $('#btn_portfolio').on("click", function() {
+          $('#path1, #path2, #path4').css({ fill: "#ffffff" });
+          $('#path3').css({ fill: "#CFACC3" });
+      });
+      $('#btn_contact').on("click", function() {
+          $('#path1, #path2, #path3').css({ fill: "#ffffff" });
+          $('#path4').css({ fill: "#CFACC3" });
+      });
+
+  </script>
+
+  </body>
+
+  </html>
