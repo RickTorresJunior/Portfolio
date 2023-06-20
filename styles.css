@@ -1276,7 +1276,7 @@ li::before {
   .splash_header {
     width: 72vw;
     margin: 3rem 0 0 2rem;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
   }
   .splash_header h1 {
     font-size: 3rem;
