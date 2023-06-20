@@ -848,7 +848,7 @@ li::before {
   /* color: #CFACC3; */
 }
 
-/* Project - Feastly */ 
+/* Project - Feastly */
 
 #font_feastly {
   color: #FB954C;
@@ -1434,7 +1434,8 @@ li::before {
     color: #E3B633;
     font-family: "Rubik Mono One";
     font-weight: 100;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    text-align: center;
     padding: 0 0 0 0;
     margin: 0 0 2rem 0;
   }
@@ -1654,11 +1655,18 @@ li::before {
 
   /* Tab - Feastly */ 
 
+  /* .image_project_logo_header img {
+    margin: 0 0 2rem 0;
+    border: 1px solid red;
+  } */
+
   #font_feastly {
+    display: none;
     color: #FB954C;
     font-family: "Open Sans";
     text-transform: uppercase;
     font-size: 1.8rem;
+    text-align: center;
     padding: 0 0 0 0;
     margin: 0 0 2rem 0;
   }
@@ -1846,10 +1854,11 @@ li::before {
     color: #fff;
     font-family: "Times New Roman", Times, serif;
     font-weight: 100;
+    text-align: center;
     /* text-transform: uppercase; */
     padding: 0 0 0 0;
     margin: 0 0 2rem 0;
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
   .doe_description {
     grid-template-columns: repeat(12, 1fr);
